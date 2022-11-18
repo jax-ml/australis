@@ -40,7 +40,7 @@ import jax
 import jax.experimental.maps
 from jax.interpreters import pxla
 from jax.stages import Lowered
-from google3.third_party.australis import executable_pb2
+from australis import executable_pb2
 import numpy as np
 import sys
 
@@ -78,8 +78,10 @@ class FakeClient:
 
   def __init__(self, n, platform):
     self.platform = platform
-    self.process_index = 0
     self.devices = [FakeDevice(self, i, platform) for i in range(n)]
+
+  def process_index(self):
+    return 0
 
   def device_count(self):
     return len(self.devices)

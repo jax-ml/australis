@@ -16,9 +16,9 @@ limitations under the License.
 
 #include <utility>
 
-#include "google/protobuf/io/coded_stream.h"
 #include "australis/executable.pb.h"
 #include "australis/petri.pb.h"
+#include "google/protobuf/io/coded_stream.h"
 
 namespace aux::internal {
 

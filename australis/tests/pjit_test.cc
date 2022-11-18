@@ -22,11 +22,7 @@ limitations under the License.
 #include "absl/status/status.h"
 #include "australis/australis.h"
 #include "australis/petri.h"
-#include "australis/tests/donate_arg_pjit.h"
-#include "australis/tests/higher_arity_pjit.h"
-#include "australis/tests/multi_return_pjit.h"
-#include "australis/tests/simple_pjit.h"
-#include "australis/tests/tuple_pjit.h"
+#include "australis/tests/pjit_test_fns.h"
 
 namespace {
 
